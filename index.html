@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Inconvenience the Dealer</title>
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  <!--Import sweetalert -->
+  <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper">
+        <ul class="right hide-on-med-and-down">>
+          <li id="instructions-nav"><a href="#">Rules</a></li>
+          <li id="game-nav"><a href="#">Game</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <li id="instructions-nav"><a href="#">Rules</a></li>
+          <li id="game-nav"><a href="#">Game</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+    <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="title center text-lighten-2">Inconvenience The Dealer</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">The game where you can finally get back at Vegas</h5>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="images/background1.jpg"></div>
+  </div>
+  </header>
+  <div class="instructions"></div>
+  <h2>Rules</h2>
+  <div class="instructions-text light">
+    <p>The aim of this game is to guess the value of the top card on the top of the deck. You have 2 attempts to guess the value of the card. One player starts as the dealer, and the next player guesses the top card.</p>
+    <p>If the player is incorrect, they get to guess again, but first they are told if their original guess was higher or lower than the card. If the player is incorrect on their second guess, they receive points equal to the difference between the value of the card and their second guess. The card is then layed on the playing field and the game moves to the next player.</p>
+    <p>However, if the player guesses the card correctly on their first try, the dealer receives 4 points and the game moves to the next player. If they are correct on their second try, the dealer receives 2 points.</p>
+    <p>The dealer cannot pass the deck to the next player until 3 people in a row guess incorrectly. The player with the lowest points at the end of the game is the winner. Oh yeah, and Aces are low.</p>
+    <p><b>First enter the number of people playing
+      (that green button below ya doofus) and then click on the deck of cards below to draw a card<b></p>
+  </div>
+  <h2>Game</h2>
+  <div class="container center">
+    <!-- Dropdown Trigger -->
+    <a class="dropdown-button btn waves-effect waves-light" data-beloworigin="true" hover="true" href="#" data-activates="dropdown1">How many people are playing?</a>
+
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!"value="2">2</a></li>
+      <li><a href="#!"value="3">3</a></li>
+      <li><a href="#!"value="4">4</a></li>
+      <li><a href="#!"value="5">5</a></li>
+      <li><a href="#!"value="6">6</a></li>
+      <li><a href="#!"value="7">7</a></li>
+      <li><a href="#!"value="8">8</a></li>
+    </ul>
+    <div class="dealer-div">
+      <h5 class="current-dealer center"></h5>
+    </div>
+
+    <!-- Card Columns -->
+    <div class="row game-board">
+      <div class="col s12 m1 l1" id="A"></div>
+      <div class="col s12 m1 l1" id="2"></div>
+      <div class="col s12 m1 l1" id="3"></div>
+      <div class="col s12 m1 l1" id="4"></div>
+      <div class="col s12 m1 l1" id="5"></div>
+      <div class="col s12 m1 l1" id="6"></div>
+      <div class="col s12 m1 l1" id="7"></div>
+      <div class="col s12 m1 l1" id="8"></div>
+      <div class="col s12 m1 l1" id="9"></div>
+      <div class="col s12 m1 l1" id="10"></div>
+      <div class="col s12 m1 l1" id="J"></div>
+      <div class="col s12 m1 l1" id="Q"></div>
+      <div class="col s12 m1 l1" id="K"></div>
+    </div>
+    <div class="deck"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <div class="point-total">
+            <div class="row players center">
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Austin Fishstein</a>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="js/sweetalert.min.js"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+  <script src="js/init.js" charset="utf-8"></script>
+</body>
+</html>
